@@ -13,11 +13,12 @@ export default function TabOneScreen(props) {
 
   return (
     <View style={styles.container}>
+    
       <Text style={styles.title}>{reduxTest}</Text>
       <Text style={styles.title}>{i18n.t("test.i18nTest")}</Text>
 
       <TextButton langText="homeScreen.bigButton" iconName="plus" iconColor="#C7C024" buttonWidth={150} />
-      
+
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
