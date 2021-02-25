@@ -1,5 +1,8 @@
 {
+  "test": {
+    "i18nTest": "i18n Toimii!"
+  },
   "homeScreen": {
-    "bigButton": "lisää projekti"
+    "bigButton": "Painike"
   }
 }

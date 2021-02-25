@@ -1134,6 +1134,11 @@
   dependencies:
     "@types/hammerjs" "^2.0.36"
 
+"@expo-google-fonts/bebas-neue@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/bebas-neue/-/bebas-neue-0.1.0.tgz#64dd7b7b65a2ba757d648ff3cd6b840df0cbd8f8"
+  integrity sha512-enaPio4Wrex5J7Rn2GFrIUsunSEqfiA23cIXujUQhwTHdrshs1s7nfi4VVeShuDxL+NAXKmBq0ZkS3NjSdbp8w==
+
 "@expo/config-plugins@1.0.20":
   version "1.0.20"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-1.0.20.tgz#b1964daf063d7ce07c3f135aa92ccf1c60cd6e46"

@@ -1,5 +1,8 @@
 {
+  "test": {
+    "i18nTest": "i18n Works!"
+  },
   "homeScreen": {
-    "bigButton": "add project"
+    "bigButton": "Button"
   }
 }
