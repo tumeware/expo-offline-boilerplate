@@ -4,5 +4,9 @@
   },
   "homeScreen": {
     "bigButton": "Painike"
+  },
+  "bottomTapBar": {
+    "home": "Koti",
+    "second": "tab kaksi"
   }
 }

@@ -4,5 +4,9 @@
   },
   "homeScreen": {
     "bigButton": "Button"
+  },
+  "bottomTapBar": {
+    "home": "Home",
+    "second": "tab two"
   }
 }
