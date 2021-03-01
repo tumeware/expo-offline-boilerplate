@@ -16,7 +16,7 @@ export default function TabOneScreen(props) {
   return (
     <View style={styles.container}>
 
-      <Text style={styles.title}>{reduxTest}</Text>
+      <CustomText langText={reduxTest} style={styles.title} />
 
       <TextButton langText="homeScreen.bigButton" iconName="plus" iconColor="#C7C024" buttonWidth={150} onPress={() => dispatch(DarkModeAction(true ? !darkMode : darkMode))} />
 

@@ -57,7 +57,7 @@ export function TextButton (props) {
 
 TextButton.defaultProps = {
   iconName: 'home',
-  langText: 'common.lorem',
+  langText: 'test.i18nTest',
   buttonWidth: null
 };
 
