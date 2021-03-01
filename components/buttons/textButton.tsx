@@ -5,6 +5,7 @@ import { useFonts, BebasNeue_400Regular } from '@expo-google-fonts/bebas-neue';
 import { useTheme } from "@react-navigation/native";
 import { Feather } from '@expo/vector-icons';
 import i18n from 'i18n-js';
+import { CustomText } from '../text/text'
 
 export function TextButton (props) {
   const { colors } = useTheme()
@@ -30,6 +31,7 @@ export function TextButton (props) {
           color={colors.bigButtonIconTextColor}
           style={styles.iconContainer}
         />
+        {/*
         <Text
           AccessibilityRole="imagebutton"
           adjustsFontSizeToFit
@@ -38,6 +40,15 @@ export function TextButton (props) {
           style={[styles.textContainer, { fontFamily: 'BebasNeue_400Regular',   color: colors.bigButtonIconTextColor, fontSize: colors.bigButtonTextSize }]}>
             {i18n.t(props.langText)}
         </Text>
+        */}
+        <CustomText
+          title
+          nativeID="customText"
+          testID="customTextTest"
+          langText="test.i18nTest"
+          size={colors.bigButtonTextSize}
+          color={colors.bigButtonIconTextColor}
+        />
       </Pressable>
     );
   }

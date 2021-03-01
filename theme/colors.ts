@@ -12,6 +12,8 @@ export const myDefaultTheme = {
     iconBgColor:"#ffffff",
     iconBorderColor:"rgba(rgba(0,0,0,.30)",
     iconSize: 24,
+    titleSize: 36,
+    textSize: 14,
 
     smallButtonBgColor: '#FFFFFF',
     smallButtonIconColor: '#3c3c3c',
@@ -38,6 +40,8 @@ export const myDarkTheme = {
     iconBgColor:"#3c3c3c",
     iconBorderColor:"#3c3c3c",
     iconSize: 24,
+    titleSize: 36,
+    textSize: 14,
 
     smallButtonBgColor: '#3c3c3c',
     smallButtonIconColor: '#aaaaaa',
