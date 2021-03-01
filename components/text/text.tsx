@@ -24,7 +24,7 @@ export function CustomText (props) {
         AccessibilityRole="text"
         adjustsFontSizeToFit
         style={[props.style, { fontFamily: props.title ? 'BebasNeue_400Regular' : 'Roboto_400Regular', color: props.color, fontSize: props.size }]}>
-          {i18n.t(props.langText || props.text)}
+          {i18n.t(props.langText) || props.text}
       </Text>
     );
   }

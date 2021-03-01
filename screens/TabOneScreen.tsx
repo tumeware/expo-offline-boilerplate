@@ -6,7 +6,7 @@ import { DarkModeAction } from '../theme/colors.action'
 
 import EditScreenInfo from '../components/EditScreenInfo'
 import { Text, View } from '../components/Themed'
-import { TextButton, IconButton, CustomText } from '../components'
+import { TextButton, IconButton, CustomText, BigImage } from '../components'
 
 export default function TabOneScreen(props) {
   const dispatch = useDispatch()
@@ -16,11 +16,9 @@ export default function TabOneScreen(props) {
   return (
     <View style={styles.container}>
 
-      <CustomText langText={reduxTest} style={styles.title} />
+    <BigImage />
 
       <TextButton langText="homeScreen.bigButton" iconName="plus" iconColor="#C7C024" buttonWidth={150} onPress={() => dispatch(DarkModeAction(true ? !darkMode : darkMode))} />
-
-      <IconButton />
 
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
