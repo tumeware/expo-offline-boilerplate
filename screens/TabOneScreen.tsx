@@ -6,7 +6,7 @@ import { DarkModeAction } from '../theme/colors.action'
 
 import EditScreenInfo from '../components/EditScreenInfo'
 import { Text, View } from '../components/Themed'
-import { TextButton, IconButton } from '../components'
+import { TextButton, IconButton, CustomText } from '../components'
 
 export default function TabOneScreen(props) {
   const dispatch = useDispatch()

@@ -23,13 +23,13 @@ export function TextButton (props) {
         hitSlop={20}
         android_ripple={{color: colors.bigButtonAndroidRippleColor}}
         onPress={props.onPress}
-        style={[styles.buttonContainer, {backgroundColor: colors.bigButtonBgColor, color: colors.bigButtonIconTextColor, width: props.buttonWidth}]}
+        style={[style.buttonContainer, {backgroundColor: colors.bigButtonBgColor, color: colors.bigButtonIconTextColor, width: props.buttonWidth}]}
       >
         <Feather
           name={props.iconName}
           size={colors.iconSize}
           color={colors.bigButtonIconTextColor}
-          style={styles.iconContainer}
+          style={style.iconContainer}
         />
         {/*
         <Text
@@ -48,6 +48,7 @@ export function TextButton (props) {
           langText="test.i18nTest"
           size={colors.bigButtonTextSize}
           color={colors.bigButtonIconTextColor}
+          style={style.textContainer}
         />
       </Pressable>
     );
@@ -60,24 +61,26 @@ TextButton.defaultProps = {
   buttonWidth: null
 };
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
   buttonContainer: {
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
     borderRadius: 10,
-    height: 60
+    height: 60,
   },
   iconContainer: {
     textAlign: 'center',
     width: '30%',
     height: 60,
-    lineHeight: 60
+    lineHeight: 60,
+    borderRightWidth: 1,
+    borderRightColor: 'rgba(255,255,255,.15)',
   },
   textContainer: {
     textAlign: 'center',
     width: '70%',
     height: 60,
-    lineHeight: 60
+    lineHeight: 60,
   }
 });
