@@ -6,7 +6,7 @@ import { DarkModeAction } from '../theme/colors.action'
 
 import EditScreenInfo from '../components/EditScreenInfo'
 import { Text, View } from '../components/Themed'
-import { TextButton, IconButton, CustomText, BigImage } from '../components'
+import { TextButton, IconButton, CustomText, BigImage, ImageItem } from '../components'
 
 export default function TabOneScreen(props) {
   const dispatch = useDispatch()
@@ -17,6 +17,8 @@ export default function TabOneScreen(props) {
     <View style={styles.container}>
 
     <BigImage testID="bigImageTest" source={require('../assets/images/img.jpg')} />
+
+    <ImageItem testID="smallImageTest" source={require('../assets/images/img.jpg')} />
 
       <TextButton langText="homeScreen.bigButton" iconName="plus" iconColor="#C7C024" buttonWidth={150} onPress={() => dispatch(DarkModeAction(true ? !darkMode : darkMode))} />
 

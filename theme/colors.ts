@@ -24,7 +24,11 @@ export const myDefaultTheme = {
     bigButtonTextSize: 18,
     bigButtonAndroidRippleColor: 'rgba(255,255,255,.20)',
 
-    activeTabColor:"red"
+    imageItemBg: '#FFFFFF',
+    imageItemTxt: '#3c3c3c',
+    imageItemAndroidRippleColor: '#3c3c3c',
+
+    activeTabColor:"red",
   }
 }
 
@@ -52,6 +56,10 @@ export const myDarkTheme = {
     bigButtonTextSize: 18,
     bigButtonAndroidRippleColor: 'rgba(255,255,255,.20)',
 
-    activeTabColor:"white"
+    imageItemBg: '#3c3c3c',
+    imageItemTxt: '#aaaaaa',
+    imageItemAndroidRippleColor: '#aaaaaa',
+
+    activeTabColor:"white",
   }
 }
