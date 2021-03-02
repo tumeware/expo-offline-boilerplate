@@ -18,7 +18,7 @@ export default function TabOneScreen(props) {
 
     <BigImage testID="bigImageTest" source={require('../assets/images/img.jpg')} />
 
-    <ImageItem testID="smallImageTest" source={require('../assets/images/img.jpg')} />
+    <ImageItem width={275} testID="imageItemTest" source={require('../assets/images/img.jpg')} />
 
       <TextButton langText="homeScreen.bigButton" iconName="plus" iconColor="#C7C024" buttonWidth={150} onPress={() => dispatch(DarkModeAction(true ? !darkMode : darkMode))} />
 
@@ -31,8 +31,6 @@ export default function TabOneScreen(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   title: {
     fontSize: 20,
