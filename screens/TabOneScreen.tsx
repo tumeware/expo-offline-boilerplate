@@ -16,7 +16,7 @@ export default function TabOneScreen(props) {
   return (
     <View style={styles.container}>
 
-    <BigImage />
+    <BigImage testID="bigImageTest" source={require('../assets/images/img.jpg')} />
 
       <TextButton langText="homeScreen.bigButton" iconName="plus" iconColor="#C7C024" buttonWidth={150} onPress={() => dispatch(DarkModeAction(true ? !darkMode : darkMode))} />
 
