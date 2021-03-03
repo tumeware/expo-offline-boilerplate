@@ -12,7 +12,7 @@ export function ImageItem (props) {
       hitSlop={20}
       android_ripple={{color: colors.imageItemAndroidRippleColor}}
       onPress={props.onPress}
-      style={[style.container, {backgroundColor: colors.imageItemBg, width: props.width}]}
+      style={[style.container, {width: props.width}]}
     >
       <View style={style.imageContainer}>
         <Image
@@ -46,7 +46,7 @@ ImageItem.defaultProps = {
   iconName: 'home',
   langText: 'test.i18nTest',
   buttonWidth: null
-};
+}
 
 const style = StyleSheet.create({
   container: {
@@ -81,4 +81,4 @@ const style = StyleSheet.create({
     height: 60,
     lineHeight: 60,
   }
-});
+})

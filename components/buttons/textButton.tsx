@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Pressable, StyleSheet, Text } from "react-native";
-import {AppLoading} from 'expo-app-loading';
-import { useFonts, BebasNeue_400Regular } from '@expo-google-fonts/bebas-neue';
-import { useTheme } from "@react-navigation/native";
-import { Feather } from '@expo/vector-icons';
-import i18n from 'i18n-js';
+import * as React from "react"
+import { Pressable, StyleSheet, Text } from "react-native"
+import {AppLoading} from 'expo-app-loading'
+import { useFonts, BebasNeue_400Regular } from '@expo-google-fonts/bebas-neue'
+import { useTheme } from "@react-navigation/native"
+import { Feather } from '@expo/vector-icons'
+import i18n from 'i18n-js'
 import { CustomText } from '../text/text'
 
 export function TextButton (props) {
@@ -12,7 +12,7 @@ export function TextButton (props) {
 
   let [fontsLoaded] = useFonts({
     BebasNeue_400Regular,
-  });
+  })
 
   if (!fontsLoaded) {
     //return <AppLoading />;
@@ -53,13 +53,13 @@ export function TextButton (props) {
       </Pressable>
     );
   }
-};
+}
 
 TextButton.defaultProps = {
   iconName: 'home',
   langText: 'test.i18nTest',
   buttonWidth: null
-};
+}
 
 const style = StyleSheet.create({
   buttonContainer: {
@@ -74,8 +74,6 @@ const style = StyleSheet.create({
     width: '30%',
     height: 60,
     lineHeight: 60,
-    borderRightWidth: 1,
-    borderRightColor: 'rgba(255,255,255,.15)',
   },
   textContainer: {
     textAlign: 'center',
@@ -83,4 +81,4 @@ const style = StyleSheet.create({
     height: 60,
     lineHeight: 60,
   }
-});
+})

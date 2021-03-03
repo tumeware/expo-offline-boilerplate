@@ -16,7 +16,7 @@ export default function TabOneScreen(props) {
   return (
     <View style={styles.container}>
 
-    <BigImage testID="bigImageTest" source={require('../assets/images/img.jpg')} />
+    <BigImage testID="bigImageTest" source={darkMode ? require('../assets/images/img.jpg') : require('../assets/images/imgL.jpg')} />
 
     <ImageItem width={275} testID="imageItemTest" source={require('../assets/images/img.jpg')} />
 
